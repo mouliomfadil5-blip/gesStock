@@ -8,7 +8,7 @@ Eine produktionsbereite Backend-Anwendung auf Basis von *Spring Boot 3* und *Pos
 * *Clean Code:* Strikte Trennung von Geschäftslogik (Service) und HTTP-Schnittstellen (Controller).
 
 ## Technologie-Stack
-* *Java 17 / 21*
+* *Java 21*
 * *Spring Boot 3* (Spring Web, Spring Data JPA)
 * *PostgreSQL* (Datenbank)
 * *Maven* (Dependency Management)
