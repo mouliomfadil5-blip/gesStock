@@ -1,5 +1,6 @@
 package com.projekt.gesStock;
 
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -24,7 +25,7 @@ public class ArtikleController {
         return new ResponseEntity<>(derArtikle, HttpStatus.OK);
         }
         @PostMapping("/add")
-    public ResponseEntity<Artikle> addArtikle(@RequestBody Artikle neuArtikle){
+    public ResponseEntity<Artikle> addArtikle(@Valid @RequestBody Artikle neuArtikle){
         Artikle hinzugefuegt= artikleService.saveArtikle(neuArtikle);
         return new ResponseEntity<>(hinzugefuegt, HttpStatus.OK);
         }
